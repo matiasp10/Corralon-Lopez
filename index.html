@@ -18,27 +18,41 @@
         <p class="nav-component-count">1020 Components</p> -->
       </div>
       <div class="nav-box2">
-        <a href="#about-us" class="nav-link">Quienes somos</a>
-        <a href="#products" class="nav-link">Productos</a>
-        <a href="#address" class="nav-link">Encuentranos</a>
-        <div class="nav-link-btn">
-          <a href="#contact" class="nav-link">
-            Contactanos
-            <svg
-              width="46"
-              height="46"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M12 5v14"></path>
-              <path d="m19 12-7 7-7-7"></path>
-            </svg>
-          </a>
+        <div class="nav-links">
+          <a href="#about-us" class="nav-link">Quienes somos</a>
+          <a href="#products" class="nav-link">Productos</a>
+          <a href="#address" class="nav-link">Encuentranos</a>
+          <div class="nav-link-btn">
+            <a href="#contact" class="nav-link">
+              Contactanos
+              <svg
+                width="46"
+                height="46"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12 5v14"></path>
+                <path d="m19 12-7 7-7-7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <button class="menu-link" onclick="clickButton()">
+          <img src="src/menu.svg" alt="" class="icon-menu" />
+        </button>
+
+        <div class="menu-links">
+          <a href="#about-us" class="nav-link">Quienes somos</a>
+          <a href="#products" class="nav-link">Productos</a>
+          <a href="#address" class="nav-link">Encuentranos</a>
+          <div class="nav-link-btn">
+            <a href="#contact" class="nav-link"> Contactanos </a>
+          </div>
         </div>
       </div>
     </nav>
@@ -113,24 +127,32 @@
     <div class="features">
       <div class="features__globe">
         <img class="features__globe-img" src="/src/featuresglobe1.jpg" />
-        <h2 class="features__globe-title">Productos de excelente categoría</h2>
-        <p class="features__globe-text">
-          Elementos de gran durabilidad y de excelente calidad
-        </p>
+        <div class="features__globe-container">
+          <h2 class="features__globe-title">
+            Productos de excelente categoría
+          </h2>
+          <p class="features__globe-text">
+            Elementos de gran durabilidad y de excelente calidad
+          </p>
+        </div>
       </div>
       <div class="features__globe">
         <img class="features__globe-img" src="/src/featuresglobe2.jpg" />
-        <h2 class="features__globe-title">Materiales de primera mano</h2>
-        <p class="features__globe-text">
-          Todo lo que necesitas para tu obra y mucho más
-        </p>
+        <div class="features__globe-container">
+          <h2 class="features__globe-title">Materiales de primera mano</h2>
+          <p class="features__globe-text">
+            Todo lo que necesitas para tu obra y mucho más
+          </p>
+        </div>
       </div>
       <div class="features__globe">
         <img class="features__globe-img" src="/src/featuresglobe3.jpg" />
-        <h2 class="features__globe-title">Relación "Precio-Calidad"</h2>
-        <p class="features__globe-text">
-          Obras de gran calidad a un precio accesible
-        </p>
+        <div class="features__globe-container">
+          <h2 class="features__globe-title">Relación "Precio-Calidad"</h2>
+          <p class="features__globe-text">
+            Obras de gran calidad a un precio accesible
+          </p>
+        </div>
       </div>
     </div>
 
@@ -170,8 +192,6 @@
           <img src="src/product5.jpg" alt="" class="product-img" />
           <h3 class="product-title">Hidrofugos y aditivos</h3>
         </div>
-      </div>
-      <div class="products-container">
         <div class="product">
           <img src="src/product1.jpg" alt="" class="product-img" />
           <h3 class="product-title">Hidrofugos y aditivos</h3>
@@ -197,7 +217,7 @@
     <!-- DIRECCION, MAPA, HORARIO DE ATENCION Y METODOS DE PAGO -->
 
     <div id="address" class="address">
-      <div class="address__background">
+      <div class="address-container">
         <h2 class="address__title">Encuentranos</h2>
         <div class="address__container">
           <div class="address__info">
@@ -254,47 +274,49 @@
     <div class="review-container">
       <h2 class="reviews-title">Reseñas</h2>
       <div class="reviews">
-        <div class="review">
-          <img src="src/review1.jpg" alt="" class="review-img" />
-          <div class="review-score">
-            <img src="src/star.svg" alt="" class="review-score__star" />
-            <p class="review-score__text">4.7</p>
+        <div class="glider">
+          <div class="review">
+            <img src="src/review1.jpg" alt="" class="review-img" />
+            <div class="review-score">
+              <img src="src/star.svg" alt="" class="review-score__star" />
+              <p class="review-score__text">4.7</p>
+            </div>
+            <p class="review-name">Tobey Maguire</p>
+            <p class="review-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+              voluptatibus, consequatur est, dolorem dicta iusto dolore quos
+              perferendis autem animi doloribus nesciunt possimus nemo eius
+              aliquid veniam corrupti numquam blanditiis.
+            </p>
           </div>
-          <p class="review-name">Tobey Maguire</p>
-          <p class="review-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
-            voluptatibus, consequatur est, dolorem dicta iusto dolore quos
-            perferendis autem animi doloribus nesciunt possimus nemo eius
-            aliquid veniam corrupti numquam blanditiis.
-          </p>
-        </div>
-        <div class="review">
-          <img src="src/review1.jpg" alt="" class="review-img" />
-          <div class="review-score">
-            <img src="src/star.svg" alt="" class="review-score__star" />
-            <p class="review-score__text">4.7</p>
+          <div class="review">
+            <img src="src/review1.jpg" alt="" class="review-img" />
+            <div class="review-score">
+              <img src="src/star.svg" alt="" class="review-score__star" />
+              <p class="review-score__text">4.7</p>
+            </div>
+            <p class="review-name">Tobey Maguire</p>
+            <p class="review-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+              voluptatibus, consequatur est, dolorem dicta iusto dolore quos
+              perferendis autem animi doloribus nesciunt possimus nemo eius
+              aliquid veniam corrupti numquam blanditiis.
+            </p>
           </div>
-          <p class="review-name">Tobey Maguire</p>
-          <p class="review-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
-            voluptatibus, consequatur est, dolorem dicta iusto dolore quos
-            perferendis autem animi doloribus nesciunt possimus nemo eius
-            aliquid veniam corrupti numquam blanditiis.
-          </p>
-        </div>
-        <div class="review">
-          <img src="src/review1.jpg" alt="" class="review-img" />
-          <div class="review-score">
-            <img src="src/star.svg" alt="" class="review-score__star" />
-            <p class="review-score__text">4.7</p>
+          <div class="review">
+            <img src="src/review1.jpg" alt="" class="review-img" />
+            <div class="review-score">
+              <img src="src/star.svg" alt="" class="review-score__star" />
+              <p class="review-score__text">4.7</p>
+            </div>
+            <p class="review-name">Tobey Maguire</p>
+            <p class="review-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+              voluptatibus, consequatur est, dolorem dicta iusto dolore quos
+              perferendis autem animi doloribus nesciunt possimus nemo eius
+              aliquid veniam corrupti numquam blanditiis.
+            </p>
           </div>
-          <p class="review-name">Tobey Maguire</p>
-          <p class="review-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
-            voluptatibus, consequatur est, dolorem dicta iusto dolore quos
-            perferendis autem animi doloribus nesciunt possimus nemo eius
-            aliquid veniam corrupti numquam blanditiis.
-          </p>
         </div>
       </div>
     </div>
@@ -343,5 +365,6 @@
         <p class="footer-copy">©Copyright. All rights reserved</p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
   </body>
 </html>
